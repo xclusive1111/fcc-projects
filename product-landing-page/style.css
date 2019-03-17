@@ -1,0 +1,183 @@
+body {
+  background-color: #eee;
+  font-family: sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify.between {
+  justify-content: space-between;
+}
+
+.justify.around {
+  justify-content: space-around;
+}
+
+.justify.center { 
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 75px;
+  padding-top: 15px;
+  background-color: #eee;
+}
+
+#header-img img {
+  max-width: 300px;
+  height: auto;
+}
+
+nav .nav-link { 
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #000;
+}
+
+nav .nav-link:hover {
+  background-color: #ccc;
+  border: 0 solid;
+  border-radius: 5px;
+}
+
+.flex.column {
+  flex-direction: column;
+}
+
+.block {
+  display: block;
+}
+
+#subscription {
+  margin-top: 75px;
+}
+
+.btn {
+  text-transform: uppercase;
+  margin: 15px 0;
+  padding: 0 20px;
+  border-radius: 2px;
+  font-size: 1em;
+  font-weight: 900; 
+  background-color: #f1c40f;
+  border: 0; 
+  max-width: 150px;
+  height: 30px;
+  cursor: pointer;
+}
+
+#subscription form {
+  max-width: 350px;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: orange;
+}
+
+#subscription form input[type="email"] {
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+}
+
+#container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+section {
+  margin-top: 30px;
+}
+
+section .flex {
+  margin: 20px auto;
+}
+
+.icon {
+  width: 20vw;
+  color: darkorange;
+}
+
+.desc {
+  justify-content: center;
+  width: 80vw;
+  height: auto;
+  padding: 5px;
+}
+
+.no.margin {
+  margin: 0;
+}
+
+.desc p {
+  padding-top: 5px;
+}
+
+.center.align {
+  text-align: center;
+}
+
+.plan {
+  width: calc(100% / 3);
+  margin: 10px !important;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.plan h3 {
+  background-color: #d6d4d4;
+  margin: 0;
+  padding: 10px 0;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.plan p {
+  margin: 5px auto;
+}
+
+.plan .btn {
+  height: auto;
+  padding: 10px 20px;
+  margin: 25px auto;
+  font-weight: 500;
+}
+
+.plan .price {
+  font-size: 1.5em;
+  font-weight: 900;
+  margin: 15px;
+}
+
+@media only screen and (max-width: 767px) {
+  .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flex.navbar {
+    flex-direction: row;
+  }
+  
+  .desc {
+    text-align: center;
+  }
+
+  .icon {
+    display: none;
+  }
+  
+  .plan {
+    width: 320px;
+  }
+}
+
